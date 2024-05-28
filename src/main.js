@@ -1,4 +1,3 @@
-import { isDepsOptimizerEnabled } from 'vite';
 import { fetchImages } from './js/pixabay-api.js';
 import { renderGallery, clearGallery } from './js/render-functions.js';
 
@@ -8,6 +7,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 const form = document.querySelector('.search-form');
 const input = document.querySelector('.search-data');
 const gallery = document.querySelector('.galleriesBox');
+
 
 form.addEventListener('submit', onSearch);
 
